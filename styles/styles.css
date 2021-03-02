@@ -1,11 +1,16 @@
 /* link to import used fonts on the website */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Poppins:wght@300&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 html, body{
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px; /* 1rem = 16px */
-	color: #FFFFFF;
-	background-color: #00074B;
+	color: rgb(255, 255, 255);
+	background-color: rgb(20, 26, 44);
 	margin-top: 0.3rem; /* (5*1/16) = 0.3125 staat voor 5px */
 }
 
@@ -21,6 +26,7 @@ h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
 	margin-left: 1.25rem; /*(20*1/16) = 1.25 staat voor 20px*/
+	margin-top: 1.2rem; /* (5*1/16) = 0.3125 staat voor 5px */
 }
 
 h3 {
@@ -28,9 +34,12 @@ h3 {
 	margin-left: 2.18rem; /*(35*1/16) = 2.18 staat voor 35px*/
 }
 
-#myChart {
-	background-color: #000000;
-	height: 20rem;
+p {
+	font-size: 0.75rem;
+}
+
+#myChart, #myChart2, #myChart3, #myChart4, #myChart5, #myChart6, #myChart7, #myChart8 {
+	background-color: rgb(31, 41, 64);
 	box-shadow:
  		0 0.1px 0.6px rgba(0, 0, 0, 0.025),
  	 	0 0.3px 1.3px rgba(0, 0, 0, 0.036),
@@ -40,4 +49,67 @@ h3 {
   		0 4px 20px rgba(0, 0, 0, 0.09)
 	;
 }
+
+#myChart2, #myChart3, .layout-Mars, .layout-Earth, .information, #myChart5, #myChart7, #myChart8 {
+	margin-top: 1rem;
+}
+
+#myChart, #myChart4, #myChart6 {
+	margin-top: 0;
+}
+
+.container {
+	width: 100vw;
+/*	height: 22vh;*/
+}
+
+.layout {
+	background-color: rgb(31, 41, 64);
+	display: none;
+
+}
+
+.text-layout, .green-text {
+	padding: 0.3rem;
+}
+
+
+.overview, .flex {
+	display: flex;
+}
+
+.layout-Mars, .layout-Earth {
+	background-color: rgb(31, 41, 64);
+	width: 40vw;
+	text-align: center;
+}
+
+.planet {
+	padding: 0.3rem;
+}
+
+.layout-Mars p, .layout-Earth p {
+	margin-bottom: 0;
+}
+
+.flex {
+	justify-content: space-around;
+}
+
+.information {
+	/*background-color: rgb(31, 41, 64);*/
+	border: solid 0.18rem rgb(255, 255, 255);
+	margin-left: 0.9rem;
+	margin-right: 0.9rem;
+	margin-bottom: 1.2rem;
+}
+
+.information p {
+	text-align: center;
+	margin: 0.2rem 0.9rem;
+}
+
+
+
+
 

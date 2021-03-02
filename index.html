@@ -2,7 +2,7 @@
 <html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>challenge 1</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link type="text/css" href="styles/styles.css" rel="stylesheet" />
@@ -13,11 +13,72 @@
 		<header>
 			<h1>Dashboard SpaceX</h1>
 		</header>
-		<section class="overview">
-			<h2>Overzicht</h2>
+		<!--First three charts shown here -->
+		<h2>Overzicht</h2>
+		<section class="overview-km">
+			<section class="layout">
+					<h3 class="text-layout">200 km</h3>
+					<h3 class="green-text">↑13.8%</h3>
+			</section>
 			<div class="container">
 				<canvas id="myChart"></canvas>
 			</div>
 		</section>
+		<section class="overview-benzine">
+			<section class="layout">
+				<h3 class="text-layout">2213 L</h3>
+				<h3 class="red-text">↓30%</h3>
+			</section>
+			<div class="container">
+				<canvas id="myChart2"></canvas>
+			</div>
+		</section>
+		<section class="overview-versnelling">
+			<section class="layout">
+				<h3 class="text-layout">2213 L</h3>
+				<h3 class="green-text">↑80%</h3>
+			</section>
+			<div class="container">
+				<canvas id="myChart3"></canvas>
+			</div>
+		</section>
+		<section class="flex">
+			<section class="layout-Earth">
+				<p>Nog 10.000 tot</p>
+				<img class="planet" src="images/Earth.svg" alt="Earth">
+			</section>
+			<section class="layout-Mars">
+				<p>Nog 10.000 tot</p>
+				<img class="planet" src="images/Mars.svg" alt="Mars">
+			</section>
+		</section>
+		<aside class="information">
+			<p>Geschatte aankomst op Mars is 14.00</p>
+		</aside>
+		<!--seccond part of the charts about the weather -->
+		<h2>Weersverwachting</h2>
+		<div class="container">
+			<canvas id="myChart4"></canvas>
+		</div>
+		<div class="container">
+			<canvas id="myChart5"></canvas>
+		</div>	
+		<aside class="information">
+			<p>Het is veilig om te landen, maar pas op voor zandstormen</p>
+		</aside>
+		<!--This is the third and last part of the charts. This is about food -->
+		<h2>Voedselconsumptie</h2>
+		<div class="container">
+			<canvas id="myChart6"></canvas>
+		</div>
+		<div class="container">
+			<canvas id="myChart7"></canvas>
+		</div>
+		<div class="container">
+			<canvas id="myChart8"></canvas>
+		</div>
+		<aside class="information">
+			<p>Het is veilig om te landen, maar pas op voor zandstormen</p>
+		</aside>
 	</body>
 </html>
