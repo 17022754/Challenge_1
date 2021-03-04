@@ -1,0 +1,55 @@
+/*Grid-layout of the homepage (of the mobile version) with the mediaqueries which results in the tablet and desktop version.*/
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	/*grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));*/
+	grid-template-rows: minmax(20px, auto);
+	grid-gap: 0.3rem;
+	grid-template-areas: 
+		'header'
+		'main'
+		'time'
+		'arrival'
+		'weather'
+		'food';
+
+}
+
+.header {
+	grid-area: header;
+}
+
+.main {
+	grid-area: main;
+}
+
+.flex {
+	grid-area: time;
+}
+
+.arrival {
+	grid-area: arrival;
+}
+
+.weather {
+	grid-area: weather;
+}
+
+.food {
+	grid-area: food;
+}
+
+/*@media only screen and (min-width: 1300px) and (max-width: 1600px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: minmax(5px, auto);
+		grid-template-areas: 
+			'header header'
+			'main .'
+			'main time'
+			'main arrival'
+			'weather weather'
+			'food food';
+}*/
+

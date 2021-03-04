@@ -25,13 +25,13 @@ h1 {
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
-	margin-left: 1.25rem; /*(20*1/16) = 1.25 staat voor 20px*/
-	margin-top: 1.2rem; /* (5*1/16) = 0.3125 staat voor 5px */
+/*	margin-left: 1.25rem; (20*1/16) = 1.25 staat voor 20px
+*/	margin-top: 1.2rem; /* (5*1/16) = 0.3125 staat voor 5px */
 }
 
 h3 {
 	font-size: 0.875rem;/*(14*1/16)=0.875 staat voor 14px */
-	margin-left: 2.18rem; /*(35*1/16) = 2.18 staat voor 35px*/
+/*	margin-left: 2.18rem; (35*1/16) = 2.18 staat voor 35px*/
 }
 
 p {
@@ -50,17 +50,8 @@ p {
 	;
 }
 
-#myChart2, #myChart3, .layout-Mars, .layout-Earth, .information, #myChart5, #myChart7, #myChart8 {
-	margin-top: 1rem;
-}
-
-#myChart, #myChart4, #myChart6 {
-	margin-top: 0;
-}
-
-.container {
-	width: 100vw;
-/*	height: 22vh;*/
+.container, .information, .flex{
+	margin-top: 0.6rem;
 }
 
 .layout {
@@ -70,12 +61,13 @@ p {
 }
 
 .text-layout, .green-text {
-	padding: 0.3rem;
+	margin-bottom: 0;
 }
 
 
-.overview, .flex {
+.flex {
 	display: flex;
+	justify-content: space-around;
 }
 
 .layout-Mars, .layout-Earth {
@@ -86,21 +78,16 @@ p {
 
 .planet {
 	padding: 0.3rem;
+	max-width: 300px;
 }
 
 .layout-Mars p, .layout-Earth p {
 	margin-bottom: 0;
 }
 
-.flex {
-	justify-content: space-around;
-}
-
 .information {
-	/*background-color: rgb(31, 41, 64);*/
 	border: solid 0.18rem rgb(255, 255, 255);
-	margin-left: 0.9rem;
-	margin-right: 0.9rem;
+	max-width: 400px;
 	margin-bottom: 1.2rem;
 }
 
@@ -108,8 +95,4 @@ p {
 	text-align: center;
 	margin: 0.2rem 0.9rem;
 }
-
-
-
-
 

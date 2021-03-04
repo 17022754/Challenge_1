@@ -1,0 +1,49 @@
+@media only screen and (min-width: 480px) {
+	.layout{
+		display: inline-block;
+	}
+	.kilometer, .benzine, .versnelling {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.flex{
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.grote-flex{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flex2 {
+		display: flex;
+	}
+
+	#myChart5 {
+		margin-top: 0;
+	}
+
+	.kleine-flex {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	.kleine-flex {
+		flex-direction: column;
+	}
+
+	.flex3{
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1600px){
+}
+

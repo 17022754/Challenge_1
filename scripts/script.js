@@ -5,6 +5,7 @@ var multipleChart = document.getElementById('myChart').getContext('2d');
     Chart.defaults.global.defaultFontColor= 'rgb(255, 255, 255)';
     Chart.defaults.scale.gridLines.display = false;
     Chart.defaults.global.responsive = true;
+    Chart.defaults.global.maintainAspectRatio = false;
 
 var BarLineChart = new Chart(myChart, {
 
@@ -52,7 +53,7 @@ var BarChart = new Chart(myChart2, {
         datasets: [{
             barPercentage: 0.4,
             label: 'Liters',
-            backgroundColor: 'rgb(104, 111, 252)',
+            backgroundColor: 'rgb(163, 160, 251)',
             data: [40, 30, 20, 10]
         }],
         labels: [20, 40, 60, 80]
@@ -154,6 +155,7 @@ var Bar2Chart = new Chart(myChart5, {
 
     data: {
         datasets: [{
+            barPercentage: 0.4,           
             label: 'hoeveelheid per maand',
             backgroundColor: [
                 'rgb(104, 111, 252)', 'rgb(163, 160, 251)', 'rgb(113, 166, 225)'
