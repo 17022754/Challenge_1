@@ -8,7 +8,6 @@
 		<link type="text/css" href="styles/styles.css" rel="stylesheet" />
 		<link type="text/css" href="styles/grid-layout.css" rel="stylesheet" />
 		<link type="text/css" href="styles/responsive-style.css" rel="stylesheet" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
 		<script type="text/javascript" src="scripts/script.js" defer></script>
 	</head>
 	<body>
@@ -19,24 +18,24 @@
 			<!--First three charts shown here -->	
 			<section class="grid-item main">
 				<h2>Overzicht</h2>
-				<section class="grote-flex">
+				<section class="overview">
 					<section class="kilometer">
-					<section class="layout">
+						<section class="layout">
 							<h3 class="text-layout">2030 km</h3>
 							<h3 class="green-text">↑13.8%</h3>
-					</section>
-					<div class="container">
-						<canvas id="myChart" style="width: 95vw;height: 25vh"></canvas>
-					</div>
-					</section>
-						<section class="benzine">
-						<section class="layout">
-							<h3 class="text-layout">2213 Liter</h3>
-							<h3 class="red-text">↓30.9%</h3>
 						</section>
 						<div class="container">
-							<canvas id="myChart2" style="width: 95vw;height: 25vh"></canvas>
+							<canvas id="myChart" style="width: 400;height: 400"></canvas>
 						</div>
+					</section>
+						<section class="benzine">
+							<section class="layout">
+								<h3 class="text-layout">2213 Liter</h3>
+								<h3 class="red-text">↓30.9%</h3>
+							</section>
+							<div class="container">
+								<canvas id="myChart2" style="width: 400;height: 400"></canvas>
+							</div>
 						</section>
 						<section class="versnelling">
 							<section class="layout">
@@ -44,19 +43,23 @@
 								<h3 class="green-text">↑80.2%</h3>
 							</section>
 							<div class="container">
-								<canvas id="myChart3" style="width: 95vw;height: 25vh"></canvas>
+								<canvas id="myChart3" style="width: 400;height: 400"></canvas>
 							</div>
 						</section>
 				</section>
 			</section>
-			<section class="grid-item flex">
+			<section class="grid-item planet-flexbox">
 				<section class="layout-Earth">
 					<p>Nog 10.000 tot</p>
-					<img class="planet" src="images/Earth.svg" alt="Earth">
+					<figure class="planet">
+						<img src="images/Earth.svg" alt="Earth">
+					</figure>
 				</section>
 				<section class="layout-Mars">
 					<p>Nog 10.000 tot</p>
-					<img class="planet" src="images/Mars.svg" alt="Mars">
+					<figure class="planet">
+						<img src="images/Mars.svg" alt="Mars">
+					</figure>
 				</section>
 			</section>
 			<aside class="grid-item arrival information">
@@ -65,12 +68,12 @@
 			<!--seccond part of the charts about the weather -->
 			<section class="grid-item weather">
 				<h2>Weersverwachting</h2>
-				<section class="flex2">
+				<section class="weather-flexbox">
 					<div class="container">
-						<canvas id="myChart4" style="width: 100%;height: 25vh"></canvas>
+						<canvas id="myChart4" style="width: 400;height: 400"></canvas>
 					</div>
 					<div class="container">
-						<canvas id="myChart5" style="width: 100%;height: 25vh"></canvas>
+						<canvas id="myChart5" style="width: 400;height: 400"></canvas>
 					</div>	
 				</section>
 				<aside class="information">
@@ -80,16 +83,16 @@
 			<!--This is the third and last part of the charts. This is about food -->
 			<section class="grid-item food">
 				<h2>Voedselconsumptie</h2>
-				<section class="flex3">
+				<section class="food-flexbox">
 					<div class="container">
-						<canvas id="myChart6" style="width: 100%;height: 25vh"></canvas>
+						<canvas id="myChart6" style="width: 400;height: 400"></canvas>
 					</div>
-					<section class="kleine-flex">
+					<section class="water-flexbox">
 						<div class="container">
-							<canvas id="myChart7" style="width: 100%;height: 25vh"></canvas>
+							<canvas id="myChart7" style="width: 400;height: 200"></canvas>
 						</div>
 						<div class="container">
-							<canvas id="myChart8" style="width: 100%;height: 25vh"></canvas>
+							<canvas id="myChart8" style="width: 400;height: 200"></canvas>
 						</div>
 					</section>
 				</section>
@@ -98,5 +101,6 @@
 				</aside>
 			</section>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
 	</body>
 </html>

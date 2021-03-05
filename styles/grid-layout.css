@@ -2,13 +2,12 @@
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr;
-	/*grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));*/
 	grid-template-rows: minmax(20px, auto);
 	grid-gap: 0.3rem;
 	grid-template-areas: 
 		'header'
 		'main'
-		'time'
+		'planets'
 		'arrival'
 		'weather'
 		'food';
@@ -23,8 +22,8 @@
 	grid-area: main;
 }
 
-.flex {
-	grid-area: time;
+.planet-flexbox {
+	grid-area: planets;
 }
 
 .arrival {
@@ -38,18 +37,3 @@
 .food {
 	grid-area: food;
 }
-
-/*@media only screen and (min-width: 1300px) and (max-width: 1600px){
-	.grid-container{
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: minmax(5px, auto);
-		grid-template-areas: 
-			'header header'
-			'main .'
-			'main time'
-			'main arrival'
-			'weather weather'
-			'food food';
-}*/
-

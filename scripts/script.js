@@ -1,11 +1,11 @@
-var multipleChart = document.getElementById('myChart').getContext('2d');
+var myChart = document.getElementById('myChart').getContext('2d');
 // Global font and sizes of the charts
     Chart.defaults.global.defaultFontFamily='Poppins';
     Chart.defaults.global.defaultFontsize= 12;
     Chart.defaults.global.defaultFontColor= 'rgb(255, 255, 255)';
     Chart.defaults.scale.gridLines.display = false;
     Chart.defaults.global.responsive = true;
-    Chart.defaults.global.maintainAspectRatio = false;
+    Chart.defaults.global.maintainAspectRatio = true;
 
 var BarLineChart = new Chart(myChart, {
 
@@ -14,7 +14,7 @@ var BarLineChart = new Chart(myChart, {
     data: {
         datasets: [{
             barPercentage: 0.5,
-            label: 'Bar Dataset',
+            label: 'Kilometer per uur',
             backgroundColor: 'rgb(104, 111, 252)',
             data: [0, 100, 300, 400, 240, 50, 45, 165],
             order: 2,
@@ -52,7 +52,7 @@ var BarChart = new Chart(myChart2, {
     data: {
         datasets: [{
             barPercentage: 0.4,
-            label: 'Liters',
+            label: 'Liters per kilometers',
             backgroundColor: 'rgb(163, 160, 251)',
             data: [40, 30, 20, 10]
         }],
@@ -70,14 +70,6 @@ var BarChart = new Chart(myChart2, {
         layout: {
             padding: 15,
         },
-
-        // scales: {
-        //     xAxes: [{
-        //         ticks: {
-        //             margin: 10,
-        //         }
-        //     }]
-        // }
     }
 });
 
@@ -89,7 +81,7 @@ var BarChart = new Chart(myChart3, {
     data: {
         datasets: [{
             barPercentage: 0.4,
-            label: 'Liters',
+            label: 'Versnelling per uur',
             backgroundColor: 'rgb(113, 166, 225)',
             data: [4, 2, 4, 6]
         }],
@@ -118,14 +110,14 @@ var LineLineChart = new Chart(myChart4, {
 
     data: {
         datasets: [{
-            label: 'Temperatuur',
-            backgroundColor: 'rgb(104, 111, 252)',
-            data: [0, 100, 300, 400, 240, 50, 45],
+            label: 'Temperatuur in graden',
+            borderColor: 'rgb(113, 166, 225)',
+            data: [0, 49, -10, 80, 30, -2, 45],
             order: 2,
         }, {
-            label: 'Regenval',
-            borderColor: 'rgb(113, 166, 225)',
-            data: [0, 29, 50, 100, 240, 400, 200],
+            label: 'Regenval mm per uur',
+            backgroundColor: 'rgb(104, 111, 252)',
+            data: [100, 50, 80, 0, 35, 70, 20],
             order: 1,
 
             // Changes this dataset to become a line
@@ -150,13 +142,13 @@ var LineLineChart = new Chart(myChart4, {
 
 var myChart5 = document.getElementById('myChart5').getContext('2d');
 
-var Bar2Chart = new Chart(myChart5, {
+var BarChart = new Chart(myChart5, {
     type: 'bar',
 
     data: {
         datasets: [{
             barPercentage: 0.4,           
-            label: 'hoeveelheid per maand',
+            label: '% hoeveelheid per maand',
             backgroundColor: [
                 'rgb(104, 111, 252)', 'rgb(163, 160, 251)', 'rgb(113, 166, 225)'
             ],
@@ -181,7 +173,7 @@ var Bar2Chart = new Chart(myChart5, {
 
 var myChart6 = document.getElementById('myChart6').getContext('2d');
 
-var myDonutPieChart = new Chart(myChart6, {
+var DonutPieChart = new Chart(myChart6, {
     type: 'pie',
 
     data: {
@@ -192,12 +184,12 @@ var myDonutPieChart = new Chart(myChart6, {
             ],
             data: [20, 30, 50]
         }],
-        labels: ['Koolhydraten', 'Eiwitten', 'Vetten']
+        labels: ['% Koolhydraten', '% Eiwitten', '% Vetten']
     },
     options:{
         title: {
             display: true,
-            text: 'Voedselinname per dag',
+            text: 'Aanbevolen voedselinname per dag',
             position: 'top',
         },
         legend: {
@@ -212,12 +204,12 @@ var myDonutPieChart = new Chart(myChart6, {
 
 var myChart7 = document.getElementById('myChart7').getContext('2d');
 
-var myhorizontalChart = new Chart(myChart7, {
+var HorizontalChart = new Chart(myChart7, {
     type: 'horizontalBar',
 
     data: {
         datasets: [{
-            barPercentage: 0.4,
+            barPercentage: 0.2,
             label: '% water over',
             backgroundColor: 'rgb(113, 166, 225)',
             data: [70]
@@ -239,12 +231,12 @@ var myhorizontalChart = new Chart(myChart7, {
 
 var myChart8 = document.getElementById('myChart8').getContext('2d');
 
-var myhorizontalChart = new Chart(myChart8, {
+var HorizontalChart = new Chart(myChart8, {
     type: 'horizontalBar',
 
     data: {
         datasets: [{
-            barPercentage: 0.4,
+            barPercentage: 0.2,
             label: '% vast voedsel over',
             backgroundColor: 'rgb(163, 160, 251)',
             data: [70]
@@ -263,3 +255,4 @@ var myhorizontalChart = new Chart(myChart8, {
         },
     }
 });
+
